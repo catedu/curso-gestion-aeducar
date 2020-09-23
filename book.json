@@ -1,0 +1,44 @@
+{
+  "plugins": [
+    "youtube",
+    "accordion",
+    "image-captions",
+    "styled-blockquotes",
+    "localized-footer",
+    "edit-link",
+    "githubcontributors",
+    "ga"
+  ],
+  "language": "es",
+  "variables": {
+    "title": "Gestión de Aeducar en un centro educativo",
+    "authors": [
+      "Cristina Martín Bruna",
+      "Iván Heredia Urzaiz"
+    ],
+    "collaborators": [{
+      "name": "_________",
+      "edited": "_____________"
+    }]
+  },
+  "pluginsConfig": {
+    "image-captions": {
+      "caption": "Imagen - _CAPTION_"
+    },
+    "localized-footer": {
+      "hline": true,
+      "filename": "./FOOTER.md"
+    },
+    "edit-link": {
+      "base": "Edita esta página",
+      "label": "Edita esta página"
+    },
+    "githubcontributors": {
+      "githubOwner": "catedu",
+      "githubRepository": "ensena-pensamiento-computacional-con-arduino"
+    },
+    "ga": {
+      "token": "UA-135691041-2"
+    }
+  }
+}
