@@ -1,0 +1,643 @@
+
+<!DOCTYPE HTML>
+<html lang="es" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Cómo gestionar la recuperación de contraseñas · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-styled-blockquotes/plugin-styled-blockquotes.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-githubcontributors/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="13gestion-de-usuarios-como-forzar-el-cambio-de-contrasena-a-varias-personas-a-la-vez.html" />
+    
+    
+    <link rel="prev" href="11gestion-de-usuarios-como-incorporar-un-listado-de-padres-madres-a-la-plataforma.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escribe para buscar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    ¿Qué es Aeducar?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1aeducarg-que-vamos-a-trabajar-durante-este-curso.html">
+            
+                <a href="../1aeducarg-que-vamos-a-trabajar-durante-este-curso.html">
+            
+                    
+                    ¿Qué vamos a trabajar durante este curso?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Gestión de Cursos</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../gestion-de-cursos/4gestion-de-cursos-acceso-a-la-plataforma-y-espacio-de-trabajo-para-la-gestion.html">
+            
+                <a href="../gestion-de-cursos/4gestion-de-cursos-acceso-a-la-plataforma-y-espacio-de-trabajo-para-la-gestion.html">
+            
+                    
+                    Acceso a la plataforma y espacio de trabajo para la Gestión
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../gestion-de-cursos/5gestion-de-cursos-organizamos-los-espacios-en-categorias-y-cursos.html">
+            
+                <a href="../gestion-de-cursos/5gestion-de-cursos-organizamos-los-espacios-en-categorias-y-cursos.html">
+            
+                    
+                    Organizamos los espacios en categorías y cursos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../gestion-de-cursos/6gestion-de-cursos-uso-de-categorias-y-cursos-para-la-organizacion-de-aulas.html">
+            
+                <a href="../gestion-de-cursos/6gestion-de-cursos-uso-de-categorias-y-cursos-para-la-organizacion-de-aulas.html">
+            
+                    
+                    Uso de categorías y cursos para la organización de aulas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../gestion-de-cursos/7gestion-de-cursos-uso-de-categorias-y-cursos-para-espacios-de-gestion-de-centro.html">
+            
+                <a href="../gestion-de-cursos/7gestion-de-cursos-uso-de-categorias-y-cursos-para-espacios-de-gestion-de-centro.html">
+            
+                    
+                    Uso de categorías y cursos para espacios de gestión de centro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../gestion-de-cursos/8gestion-de-cursos-carga-masiva-de-cursos-en-aeducar.html">
+            
+                <a href="../gestion-de-cursos/8gestion-de-cursos-carga-masiva-de-cursos-en-aeducar.html">
+            
+                    
+                    Carga masiva de cursos en Aeducar
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Gestión de Usuarios</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="9gestion-de-usuarios-como-matricular-alumnado-y-profesorado-de-forma-masiva.html">
+            
+                <a href="9gestion-de-usuarios-como-matricular-alumnado-y-profesorado-de-forma-masiva.html">
+            
+                    
+                    Cómo matricular alumnado y profesorado de forma masiva 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="10gestion-de-usuarios-como-anadir-nuevos-miembros-en-aeducar-de-manera-individual.html">
+            
+                <a href="10gestion-de-usuarios-como-anadir-nuevos-miembros-en-aeducar-de-manera-individual.html">
+            
+                    
+                    Cómo añadir nuevos miembros en Aeducar de manera individual
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="11gestion-de-usuarios-como-incorporar-un-listado-de-padres-madres-a-la-plataforma.html">
+            
+                <a href="11gestion-de-usuarios-como-incorporar-un-listado-de-padres-madres-a-la-plataforma.html">
+            
+                    
+                    Cómo incorporar un listado de padres/madres a la plataforma
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.4" data-path="12gestion-de-usuarios-como-gestionar-la-recuperacion-de-contrasenas.html">
+            
+                <a href="12gestion-de-usuarios-como-gestionar-la-recuperacion-de-contrasenas.html">
+            
+                    
+                    Cómo gestionar la recuperación de contraseñas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="13gestion-de-usuarios-como-forzar-el-cambio-de-contrasena-a-varias-personas-a-la-vez.html">
+            
+                <a href="13gestion-de-usuarios-como-forzar-el-cambio-de-contrasena-a-varias-personas-a-la-vez.html">
+            
+                    
+                    Cómo forzar el cambio de contraseña a varias personas a la vez
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="14gestion-de-usuarios-como-definir-la-politica-de-privacidad-del-sitio.html">
+            
+                <a href="14gestion-de-usuarios-como-definir-la-politica-de-privacidad-del-sitio.html">
+            
+                    
+                    Cómo definir la política de privacidad del sitio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="15gestion-de-usuarios-solicitudes-de-datos-en-relacion-con-el-rgpd.html">
+            
+                <a href="15gestion-de-usuarios-solicitudes-de-datos-en-relacion-con-el-rgpd.html">
+            
+                    
+                    Solicitudes de datos en relación con el RGPD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Soporte</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../soporte/16soporte-estructura-del-soporte-tecnico-en-aeducar.html">
+            
+                <a href="../soporte/16soporte-estructura-del-soporte-tecnico-en-aeducar.html">
+            
+                    
+                    Estructura del soporte técnico en Aeducar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../soporte/17soporte-flujo-de-incidencias.html">
+            
+                <a href="../soporte/17soporte-flujo-de-incidencias.html">
+            
+                    
+                    Flujo de incidencias
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../soporte/18soporte-para-crear-un-ticket-desde-la-plataforma.html">
+            
+                <a href="../soporte/18soporte-para-crear-un-ticket-desde-la-plataforma.html">
+            
+                    
+                    Para crear un ticket desde la plataforma
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../soporte/19soporte-para-consultar-el-listado-de-peticiones.html">
+            
+                <a href="../soporte/19soporte-para-consultar-el-listado-de-peticiones.html">
+            
+                    
+                    Para consultar el listado de peticiones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../soporte/20soporte-para-contestar-con-la-resolucion-de-una-peticion.html">
+            
+                <a href="../soporte/20soporte-para-contestar-con-la-resolucion-de-una-peticion.html">
+            
+                    
+                    Para contestar con la resolución de una petición
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../soporte/21soporte-otras-funcionalidades.html">
+            
+                <a href="../soporte/21soporte-otras-funcionalidades.html">
+            
+                    
+                    Otras funcionalidades
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Otras configuraciones</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../otras-configuraciones/22otras-configuraciones-calificaciones.html">
+            
+                <a href="../otras-configuraciones/22otras-configuraciones-calificaciones.html">
+            
+                    
+                    Calificaciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../otras-configuraciones/23otras-configuraciones-ajustes-de-la-pagina-principal.html">
+            
+                <a href="../otras-configuraciones/23otras-configuraciones-ajustes-de-la-pagina-principal.html">
+            
+                    
+                    Ajustes de la página principal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../otras-configuraciones/24otras-configuraciones-gestion-de-insignias.html">
+            
+                <a href="../otras-configuraciones/24otras-configuraciones-gestion-de-insignias.html">
+            
+                    
+                    Gestión de insignias
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../otras-configuraciones/25otras-configuraciones-competencias.html">
+            
+                <a href="../otras-configuraciones/25otras-configuraciones-competencias.html">
+            
+                    
+                    Competencias
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Apéndice</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../apendice/26aeducarg-ajustes-finales-tras-la-instalacion-de-aeducar.html">
+            
+                <a href="../apendice/26aeducarg-ajustes-finales-tras-la-instalacion-de-aeducar.html">
+            
+                    
+                    Ajustes finales tras la instalación de Aeducar
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Créditos</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../27aeducarg-creditos.html">
+            
+                <a href="../27aeducarg-creditos.html">
+            
+                    
+                    Créditos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado con GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Cómo gestionar la recuperación de contraseñas</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="gesti&#xF3;n-de-usuarios">Gesti&#xF3;n de Usuarios</h2>
+<h3 id="4-c&#xF3;mo-gestionar-la-recuperaci&#xF3;n-de-contrase&#xF1;as">4. C&#xF3;mo gestionar la recuperaci&#xF3;n de contrase&#xF1;as</h3>
+<p>La recuperaci&#xF3;n de contrase&#xF1;as es una tarea habitual en la gesti&#xF3;n de sitios como Aeducar. </p>
+<p>En caso de que un usuario olvide o pierda su contrase&#xF1;a, habr&#xE1; dos opciones para su recuperaci&#xF3;n: </p>
+<ol>
+<li>El usuario de <strong>forma aut&#xF3;noma</strong> puede gestionar de forma autom&#xE1;tica la recuperaci&#xF3;n de contrase&#xF1;as en la p&#xE1;gina de acceso a Aeducar.es desde el enlace <em><strong>&#xBF;Olvid&#xF3; su nombre de usuario o contrase&#xF1;a?</strong></em> bien indicando su nombre de usuario o bien indicando su direcci&#xF3;n de correo electr&#xF3;nico.</li>
+</ol>
+<p><img src="https://lh3.googleusercontent.com/PCL-xk6Lssx5CoNPBCyK1aAE71IeXzHwmmBfmVD9W-9Kc2Nvip3dBrX1yT7utyFZKz7tvRMcYOIk9DDKUKtSwzeaGp9DKlCtnqay-S5sZ-K7KuqM2CE56h3vmgRNZJa7D2ciMv-G" alt=""></p>
+<ol>
+<li>Desde la cuenta de gesti&#xF3;n podemos modificar la contrase&#xF1;a de un usuario desde <em>Administraci&#xF3;n del sitio</em> &gt;&gt; <em>Usuarios</em> &gt;&gt; <em>Examinar lista de usuarios</em>. Una vez all&#xED;, localizamos al usuario y desde la rueda dentada que aparece a su derecha, elegimos Editar y nos llevar&#xE1; a la p&#xE1;gina de edici&#xF3;n de su perfil, donde podremos modificar la contrase&#xF1;a desde el ajuste:</li>
+</ol>
+<p><img src="https://lh5.googleusercontent.com/noMVZeJ03qaEUZrJMbkGE42H9efXhLzdDsbUN-QNJEMn40OXH7wxm6ahguZ4oKVl-McCHzVGWLX2OMZsdxNU7OGwmEHNR7ggQnnyPlvuVtUN7JfM2MlGdOQcHbG0mmhuK6VlG7OJ" alt=""> </p>
+<p>Ser&#xED;a bueno marcar la opci&#xF3;n <strong>Forzar cambio de contrase&#xF1;a</strong> para que cuando acceda con la que le hayamos asignado, el usuario deba de forma obligatoria cambiarla y generar su propia contrase&#xF1;a para entrar en Aeducar.
+<div id="page-footer" class="localized-footer"><hr><p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Gesti&#xF3;n de Aeducar en un centro educativo</span> por <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Cristina Mart&#xED;n Bruna y  Iv&#xE1;n Heredia Urzaiz</span> bajo licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional License</a>.</p>
+</div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="11gestion-de-usuarios-como-incorporar-un-listado-de-padres-madres-a-la-plataforma.html" class="navigation navigation-prev " aria-label="Previous page: Cómo incorporar un listado de padres/madres a la plataforma">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="13gestion-de-usuarios-como-forzar-el-cambio-de-contrasena-a-varias-personas-a-la-vez.html" class="navigation navigation-next " aria-label="Next page: Cómo forzar el cambio de contraseña a varias personas a la vez">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Cómo gestionar la recuperación de contraseñas","level":"3.4","depth":1,"next":{"title":"Cómo forzar el cambio de contraseña a varias personas a la vez","level":"3.5","depth":1,"path":"gestion-de-usuarios/13gestion-de-usuarios-como-forzar-el-cambio-de-contrasena-a-varias-personas-a-la-vez.md","ref":"gestion-de-usuarios/13gestion-de-usuarios-como-forzar-el-cambio-de-contrasena-a-varias-personas-a-la-vez.md","articles":[]},"previous":{"title":"Cómo incorporar un listado de padres/madres a la plataforma","level":"3.3","depth":1,"path":"gestion-de-usuarios/11gestion-de-usuarios-como-incorporar-un-listado-de-padres-madres-a-la-plataforma.md","ref":"gestion-de-usuarios/11gestion-de-usuarios-como-incorporar-un-listado-de-padres-madres-a-la-plataforma.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","accordion","image-captions","styled-blockquotes","localized-footer","edit-link","githubcontributors","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"youtube":{},"accordion":{},"search":{},"styled-blockquotes":{},"localized-footer":{"filename":"./FOOTER.md","hline":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-135691041-2"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"catedu","githubRepository":"ensena-pensamiento-computacional-con-arduino"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edita esta página","base":"Edita esta página"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"Imagen - _CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"title":"Gestión de Aeducar en un centro educativo","authors":["Cristina Martín Bruna","Iván Heredia Urzaiz"],"collaborators":[{"name":"_________","edited":"_____________"}],"_pictures":[{"backlink":"index.html#fig1.1.1","level":"1.1","list_caption":"Figure: Logo Aeducar","alt":"Logo Aeducar","nro":1,"url":"https://moodle.catedu.es/pluginfile.php/105774/mod_page/content/2/Logo%20Aeducar.png","index":1,"caption_template":"Imagen - _CAPTION_","label":"Logo Aeducar","attributes":{},"skip":false,"key":"1.1.1"}]},"language":"es","gitbook":"*"},"file":{"path":"gestion-de-usuarios/12gestion-de-usuarios-como-gestionar-la-recuperacion-de-contrasenas.md","mtime":"2020-09-23T12:37:04.973Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-23T12:37:42.399Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-githubcontributors/contributors.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
